@@ -1,22 +1,24 @@
 const express = require('express');
 const dotEnv = require('dotenv');
 const {adminRoute , frontendRoute}= require('./Routes')
+const expressEjsLayouts = require('express-ejs-layouts');
 
 
 // configure .env
 dotEnv.config()
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 000
 
 const app = express()
 
 // serving static files
 app.use(express.static(__dirname+'/public'))
 
-//settting view engines
-app.set('view', 'ejs')
+//settting view engines and layouts
+app.set('view', 'ejs');
+app.use(expressEjsLayouts);
 
-//confi
+
 
 app.use('/admin',adminRoute)
 app.use('/', frontendRoute)
