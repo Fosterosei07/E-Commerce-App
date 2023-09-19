@@ -7,7 +7,7 @@ const expressEjsLayouts = require('express-ejs-layouts');
 // configure .env
 dotEnv.config()
 
-const port = process.env.PORT || 000
+const port = process.env.PORT || 4343
 
 const app = express()
 
