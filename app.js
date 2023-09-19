@@ -10,6 +10,8 @@ const port = process.env.PORT || 5000
 
 const app = express()
 
+// serving static files
+app.use(express.static(__dirname+'/public'))
 
 app.use('/admin',adminRoute)
 app.use('/', frontendRoute)
