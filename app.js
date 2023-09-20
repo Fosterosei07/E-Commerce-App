@@ -34,31 +34,3 @@ try{
 }
 
 startServer()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const userRoute = require('./Routes/userRoute');
-// const dbConnect = require('./Database/dbConnect');
-// const expressLayouts = require("express-ejs-layouts");
-// const sequelize  = require('sequelize');
-// const ejs = require('ejs');
